@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donations</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:wght@400;600&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header3" class="container donate">
+      <!--This contains the navbar-->
+      <nav>
+        <img src="Images/Logo.png" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Projects</a></li>
+          <li><a href="involved.html">Get Involved</a></li>
+          <button class="btn btn2"><a href="donate.html">Donate Now</a></button>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="donations">
+      <h1>SUPPORT OUR CAUSE</h1>
+
+      <div class="form-section">
+        <h3>SIGN UP</h3>
+        <form action="">
+          <label for="Name">Name:</label>
+          <input
+            type="text"
+            name="Enter"
+            placeholder="Type your full name"
+          /><br />
+          <label for="Email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="someone@mail.com"
+          /><br />
+          <div class="tel-amount">
+            <label for="tel" id="tel">Phone Number:</label>
+            <input type="tel" name="tel" />
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" placeholder="1" id="amount" />
+          </div>
+
+          <div class="toggle-btn">
+            <label for="checkbox">Make this a reoccuring payment</label>
+            <input type="checkbox" name="checkbox" id="toggle-btn" />
+          </div>
+          <button type="button" onclick="payWithPaystack()">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>
+        Copyright &copy Turning Scars to Stars. Made with
+        <i class="fa-solid fa-heart"></i> by Sam
+      </p>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+  </body>
+</html>

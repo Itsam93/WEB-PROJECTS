@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+    <link rel="icon" href="Images/logo_c.png" type="Images" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:wght@400;600&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/d621431e87.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!--This contains the navbar-->
+            <img src="Images/logo1.png" class="logo">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>              
+            </ul>
+          </div>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm Blessing <br><span>Amune</span> From Nigeria</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-----------About Section--------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/IMG-20220527-WA0026.png">
+          </div>
+          <div class="about-col-2">
+            <h1>About Me</h1>
+            <p>I'm a UI/UX and graphic designer with a passion for crafting intuitive, user-centered digital experiences. With a strong background in designing web app interfaces, I specialize in transforming complex ideas into clean, functional, and visually engaging designs. I combine creativity with usability, ensuring every project not only looks great but also delivers seamless interaction. Whether it's wireframing, prototyping, or visual branding, I bring a thoughtful and collaborative approach to every design challenge.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><Span>UI/UX</Span><br>Designing Web/App Interfaces</li>
+                <li><Span>Web Development</Span><br>Web app Development</li>
+                <li><Span>App Development</Span><br>Building Andriod/IOS apps</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><Span>2020 - Current</Span><br>UI/UX Design at Loveworld Incorporations</li>
+                <li><Span>2019 - 2021</Span><br>Team Member at SCRIPTECH Solutions</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><Span>2015</Span><br>UI/UX Design Training at Alisson</li>
+                <li><Span>2023</Span><br>BSc from Kaduna State University</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------Services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designer</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolores.</p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Ui/UX Design</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolores.</p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-apple-whole"></i>
+            <h2>App Design</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolores.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!---------------My Portfolio---------->
+<div id="portfolio">
+  <div class="container">
+      <h1 class="sub-title">My Work</h1>
+  
+    <div class="work-list">
+      <div class="work">
+        <img src="Images/work-1.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>The app connects you</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Images/work-2.png">
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>The app connects you</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Images/work-3.png">
+        <div class="layer">
+          <h3>Online Shopping App</h3>
+          <p>The app connects you</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!--------Contact Section------->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>blessingamune2@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i>08132929741</p>
+        <div class="social-icons">
+          <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+
+          <a href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></i></a>
+
+          <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+
+          <a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>
+      Copyright &copy Blessing. Made with <i class="fa-solid fa-heart"></i> by Sam
+    </p>
+  </div>
+  <span id="span">Hello</span>
+</div>
+
+
+    <script>
+      let tablinks=document.getElementsByClassName("tab-links");
+      let tabcontents=document.getElementsByClassName('tab-contents');
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+  </body>
+</html>
